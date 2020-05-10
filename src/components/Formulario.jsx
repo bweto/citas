@@ -63,8 +63,9 @@ const Formulario = ({ crearCita }) => {
         <p className="alerta-error">Todos los campos son obligatorios</p>
       ) : null}
       <form onSubmit={submitCita}>
-        <label>Mascotas</label>
+        <label for="mascota">Mascotas</label>
         <input
+          id="mascota"
           type="text"
           name="mascota"
           className="u-full-width"
@@ -72,8 +73,9 @@ const Formulario = ({ crearCita }) => {
           onChange={actualizarState}
           value={mascota}
         />
-        <label>Propietario</label>
+        <label for="propietario">Propietario</label>
         <input
+          id="propietario"
           type="text"
           name="propietario"
           className="u-full-width"
@@ -81,24 +83,27 @@ const Formulario = ({ crearCita }) => {
           onChange={actualizarState}
           value={propietario}
         />
-        <label>Fecha</label>
+        <label for="fecha">Fecha</label>
         <input
+          id="fecha"
           type="date"
           name="fecha"
           className="u-full-width"
           onChange={actualizarState}
           value={fecha}
         />
-        <label>Hora</label>
+        <label for="hora">Hora</label>
         <input
+          id="hora"
           type="time"
           name="hora"
           className="u-full-width"
           onChange={actualizarState}
           value={hora}
         />
-        <label>Síntomas</label>
+        <label for="sintoma">Síntomas</label>
         <textarea
+          id="sintoma"
           type="text"
           name="sintomas"
           className="u-full-width"
